@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<style>
+</style>
+<script src=""></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+  
+    const swiper = new Swiper('.mainbanner .swiper ', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+  
+
+  
+  });
+
+  const swiper1 = new Swiper('.about-block .swiper ', {
+    direction: 'horizontal',
+		loop: false,
+		slidesPerView: 2.1,
+		spaceBetween: 20,
+		centerInsufficientSlides: false,
+		autoplay: {
+			delay: 3000,
+		},
+		speed: 1000,
+    
+	});
+  </script>
+<body class="wrapper">
+
+
+<header class="header container" id="header">
+    <div class="inner_header">
+        <a class="header__logo" href="#">
+            <img src="./assets/images/bentley-061.png"></img>
+        </a>
+        <div class="header__nav">
+            <div class="nav__element">
+                <a href="#"> 
+                    Наши услуги
+                </a>
+            </div>
+            <div class="nav__element">
+                <a href="#">
+                    О компании
+                </a>
+            </div>
+            <div class="nav__element">
+                <a href="#">
+                    Отзывы
+                </a>
+            </div>
+            <div class="nav__element">
+                <a href="#">
+                    Контакты
+                </a>
+            </div>
+        </div>
+        <div class="header__contacts"> 
+            <div class="contacts__item">
+                <a class="contacts__phone" href="#">
+                    +7 (911) 501-52-35
+                </a>
+                <div class="contacts__label">
+                    г.Вологда, ул. Зосимовская, дом 30
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-menu">
+            <a class="header__logo" href="#">
+                <img src="./assets/images/bentley-061.png"></img>
+            </a>
+            <nav class="mobile-menu-nav">
+               <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+               </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+<div class="mainbanner alignfull" id="mb">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(./assets/images/slides/banner1.png)">
+                <div class="slide-info container">
+                    <div class="inner-slide-info">
+                        <div class="info__title">
+                            Первый СПА-салон <br> для любимых хвостиков
+                        </div>
+                        <div class="info__subtitle">
+                            Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. 
+                        </div>
+                        <div class="info__btn">
+                            <div class="btn__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3.63626 6.43588C3.48892 5.02723 2.6756 4.21188 1.7456 4.21188V4.21323C1.68948 4.21316 1.63342 4.21604 1.5776 4.22188C0.579604 4.32454 -0.133052 5.32054 0.0216038 6.81323C0.170948 8.24123 1.03426 9.33323 1.98295 9.33323C2.02592 9.33332 2.06889 9.33107 2.1116 9.32657C3.1116 9.22254 3.79226 7.92654 3.63626 6.43588ZM1.97226 7.99188C1.58254 7.66438 1.39517 7.20523 1.3476 6.67454C1.3476 6.33882 1.34442 6.00757 1.4936 5.7092C1.57651 5.55326 1.6776 5.55054 1.71626 5.54654L1.74573 5.54604C1.97038 5.54604 2.24292 5.92985 2.31026 6.57385C2.35638 7.07545 2.28529 7.59063 1.97226 7.99188Z" fill="white"/>
+                                    <path d="M5.64468 5.63334C5.69202 5.63334 5.73868 5.63334 5.78602 5.626C6.88402 5.51134 7.63468 4.08734 7.46337 2.446C7.30137 0.897344 6.40668 0 5.38402 0C5.32255 6.25e-05 5.26115 0.003375 5.20002 0.01C4.10137 0.124 3.31602 1.21934 3.48737 2.86134C3.65202 4.432 4.60002 5.63334 5.64468 5.63334ZM4.99402 1.57334C5.06118 1.441 5.18999 1.35094 5.33737 1.33334C5.3529 1.33238 5.36849 1.33238 5.38402 1.33334C5.69337 1.33334 6.05068 1.76334 6.13737 2.58469C6.19965 3.06241 6.12474 3.54797 5.92137 3.98469C5.80002 4.21469 5.67802 4.29469 5.64471 4.29803C5.47337 4.29803 4.92205 3.75538 4.81337 2.72069C4.74387 2.32878 4.80746 1.92491 4.99402 1.57334Z" fill="white"/>
+                                    <path d="M10.2432 5.626C10.2905 5.63066 10.3378 5.63334 10.3845 5.63334C11.4279 5.63334 12.3779 4.43334 12.5419 2.86134C12.7132 1.21934 11.9279 0.124 10.8305 0.01C10.7692 0.003375 10.7076 3.125e-05 10.6459 0C9.62253 0 8.72787 0.897344 8.56587 2.446C8.39452 4.08734 9.14518 5.51266 10.2432 5.626ZM9.89253 2.584C9.97787 1.76334 10.3339 1.33334 10.6459 1.33334C10.6612 1.33234 10.6766 1.33234 10.6919 1.33334C10.8391 1.35078 10.9679 1.44059 11.0352 1.57269C11.2225 1.92403 11.2861 2.32813 11.2159 2.72003C11.1079 3.75469 10.5559 4.29738 10.3819 4.29738C10.3512 4.29738 10.2292 4.21403 10.1079 3.98403C9.90443 3.54731 9.82971 3.06166 9.89253 2.584Z" fill="white"/>
+                                    <path d="M8.00061 7.33336C4.97261 7.33336 2.00061 10.4274 1.99661 13.5794C1.91395 15.712 3.72995 16.4847 5.92995 15.698C7.27114 15.2407 8.72611 15.2407 10.0673 15.698C10.584 15.8725 11.1225 15.9741 11.6673 16C13.596 16 14.0006 14.6834 14.0006 13.5794C14.0006 10.4274 11.0286 7.33336 8.00061 7.33336ZM8.00061 14C6.49795 13.762 3.18461 15.8887 3.33395 13.5794C3.33395 11.146 5.6893 8.6667 8.00061 8.6667C10.3119 8.6667 12.6673 11.146 12.6673 13.5794C12.818 15.8867 9.51061 13.7647 8.00061 14Z" fill="white"/>
+                                    <path d="M14.6476 4.92714L14.6473 4.92845C14.5927 4.91542 14.5375 4.90532 14.4818 4.8981C13.4871 4.76773 12.5638 5.57245 12.3699 7.06051C12.1857 8.48445 12.7738 9.74617 13.6969 9.96504C13.7387 9.97504 13.781 9.98279 13.8237 9.98823C14.8207 10.1178 15.782 9.01379 15.9741 7.52732C16.1558 6.1227 15.5525 5.1417 14.6476 4.92714ZM14.6521 7.3557C14.5812 7.85435 14.3932 8.33926 13.996 8.65745C13.6924 8.24885 13.616 7.75888 13.6921 7.23154C13.7696 6.90488 13.8429 6.58182 14.0569 6.32595C14.1736 6.19335 14.2726 6.21401 14.3111 6.21904L14.3399 6.22539C14.5585 6.2772 14.7351 6.71354 14.6521 7.3557Z" fill="white"/>
+                                  </svg>
+                            </div>
+                            Записаться
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(./assets/images/slides/banner2.jpg);">
+                <div class="slide-info container">
+                    <div class="inner-slide-info">
+                        <div class="info__title">
+                            Первый СПА-салон <br> для любимых хвостиков
+                        </div>
+                        <div class="info__subtitle">
+                            Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. 
+                        </div>
+                        <div class="info__btn">
+                            <div class="btn__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3.63626 6.43588C3.48892 5.02723 2.6756 4.21188 1.7456 4.21188V4.21323C1.68948 4.21316 1.63342 4.21604 1.5776 4.22188C0.579604 4.32454 -0.133052 5.32054 0.0216038 6.81323C0.170948 8.24123 1.03426 9.33323 1.98295 9.33323C2.02592 9.33332 2.06889 9.33107 2.1116 9.32657C3.1116 9.22254 3.79226 7.92654 3.63626 6.43588ZM1.97226 7.99188C1.58254 7.66438 1.39517 7.20523 1.3476 6.67454C1.3476 6.33882 1.34442 6.00757 1.4936 5.7092C1.57651 5.55326 1.6776 5.55054 1.71626 5.54654L1.74573 5.54604C1.97038 5.54604 2.24292 5.92985 2.31026 6.57385C2.35638 7.07545 2.28529 7.59063 1.97226 7.99188Z" fill="white"/>
+                                    <path d="M5.64468 5.63334C5.69202 5.63334 5.73868 5.63334 5.78602 5.626C6.88402 5.51134 7.63468 4.08734 7.46337 2.446C7.30137 0.897344 6.40668 0 5.38402 0C5.32255 6.25e-05 5.26115 0.003375 5.20002 0.01C4.10137 0.124 3.31602 1.21934 3.48737 2.86134C3.65202 4.432 4.60002 5.63334 5.64468 5.63334ZM4.99402 1.57334C5.06118 1.441 5.18999 1.35094 5.33737 1.33334C5.3529 1.33238 5.36849 1.33238 5.38402 1.33334C5.69337 1.33334 6.05068 1.76334 6.13737 2.58469C6.19965 3.06241 6.12474 3.54797 5.92137 3.98469C5.80002 4.21469 5.67802 4.29469 5.64471 4.29803C5.47337 4.29803 4.92205 3.75538 4.81337 2.72069C4.74387 2.32878 4.80746 1.92491 4.99402 1.57334Z" fill="white"/>
+                                    <path d="M10.2432 5.626C10.2905 5.63066 10.3378 5.63334 10.3845 5.63334C11.4279 5.63334 12.3779 4.43334 12.5419 2.86134C12.7132 1.21934 11.9279 0.124 10.8305 0.01C10.7692 0.003375 10.7076 3.125e-05 10.6459 0C9.62253 0 8.72787 0.897344 8.56587 2.446C8.39452 4.08734 9.14518 5.51266 10.2432 5.626ZM9.89253 2.584C9.97787 1.76334 10.3339 1.33334 10.6459 1.33334C10.6612 1.33234 10.6766 1.33234 10.6919 1.33334C10.8391 1.35078 10.9679 1.44059 11.0352 1.57269C11.2225 1.92403 11.2861 2.32813 11.2159 2.72003C11.1079 3.75469 10.5559 4.29738 10.3819 4.29738C10.3512 4.29738 10.2292 4.21403 10.1079 3.98403C9.90443 3.54731 9.82971 3.06166 9.89253 2.584Z" fill="white"/>
+                                    <path d="M8.00061 7.33336C4.97261 7.33336 2.00061 10.4274 1.99661 13.5794C1.91395 15.712 3.72995 16.4847 5.92995 15.698C7.27114 15.2407 8.72611 15.2407 10.0673 15.698C10.584 15.8725 11.1225 15.9741 11.6673 16C13.596 16 14.0006 14.6834 14.0006 13.5794C14.0006 10.4274 11.0286 7.33336 8.00061 7.33336ZM8.00061 14C6.49795 13.762 3.18461 15.8887 3.33395 13.5794C3.33395 11.146 5.6893 8.6667 8.00061 8.6667C10.3119 8.6667 12.6673 11.146 12.6673 13.5794C12.818 15.8867 9.51061 13.7647 8.00061 14Z" fill="white"/>
+                                    <path d="M14.6476 4.92714L14.6473 4.92845C14.5927 4.91542 14.5375 4.90532 14.4818 4.8981C13.4871 4.76773 12.5638 5.57245 12.3699 7.06051C12.1857 8.48445 12.7738 9.74617 13.6969 9.96504C13.7387 9.97504 13.781 9.98279 13.8237 9.98823C14.8207 10.1178 15.782 9.01379 15.9741 7.52732C16.1558 6.1227 15.5525 5.1417 14.6476 4.92714ZM14.6521 7.3557C14.5812 7.85435 14.3932 8.33926 13.996 8.65745C13.6924 8.24885 13.616 7.75888 13.6921 7.23154C13.7696 6.90488 13.8429 6.58182 14.0569 6.32595C14.1736 6.19335 14.2726 6.21401 14.3111 6.21904L14.3399 6.22539C14.5585 6.2772 14.7351 6.71354 14.6521 7.3557Z" fill="white"/>
+                                  </svg>
+                            </div>
+                            Записаться
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+
+<div class="services-block container">
+    <div class="top-title">
+        Наши услуги
+    </div>
+    <div class="services-items">
+        <div class="service__item">
+            <div class="service__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+                    <g filter="url(#filter0_b_106_21)">
+                      <path d="M49.3049 21.7344C42.5254 16.6678 36.0738 21.8087 25.6238 22.8351C10.2757 24.3319 6.26108 32.9958 10.4445 38.8215C14.6278 44.6472 24.0353 42.0398 29.8039 46.7661C35.7503 51.2799 35.5175 61.1062 42.0773 63.8495C48.6372 66.5927 56.0302 60.5679 53.7979 45.1919C52.4 34.715 55.7881 27.1552 49.3049 21.7344Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter1_b_106_21)">
+                      <path d="M37.2292 4.29402C36.9174 12.3097 32.5092 18.6911 27.3622 18.5232C22.2152 18.3554 18.3237 11.7741 18.6571 3.70415C18.9906 -4.36578 23.388 -10.72 28.5241 -10.5251C33.6603 -10.3301 37.5519 -3.74879 37.2292 4.29402Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter2_b_106_21)">
+                      <path d="M69.5324 29.5282C62.0729 31.4446 57.1991 36.8098 58.6305 41.458C60.0619 46.1063 67.346 48.401 74.8154 46.4594C82.2849 44.5179 87.1487 39.1779 85.7173 34.5296C84.2859 29.8813 77.0018 27.5867 69.5324 29.5282Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter3_b_106_21)">
+                      <path d="M61.5912 2.2247C57.6318 9.64459 50.5553 13.6098 45.5989 11.0095C40.6424 8.40912 40.1279 0.387545 44.0604 -7.04309C47.9929 -14.4737 55.0963 -18.4282 59.8912 -15.8923C64.686 -13.3564 65.5237 -5.20593 61.5912 2.2247Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter4_b_106_21)">
+                      <path d="M65.4127 5.04312C59.2525 10.7562 56.9872 18.6204 60.5012 22.6309C64.0153 26.6414 71.7647 25.2393 77.9249 19.5261C84.0851 13.813 86.3503 5.94882 82.8622 1.94871C79.3741 -2.05141 71.6096 -0.686735 65.4127 5.04312Z" fill="#ECECF9"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_b_106_21" x="-16.1079" y="-5.46307" width="95.3123" height="94.954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter1_b_106_21" x="-6.36279" y="-35.5294" width="68.6108" height="79.0559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter2_b_106_21" x="33.3811" y="3.83624" width="77.5859" height="68.3152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter3_b_106_21" x="16.4519" y="-41.6596" width="72.6309" height="78.4675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter4_b_106_21" x="33.8413" y="-25.343" width="75.6631" height="75.262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+                <img src="./assets/images/dog1.png">
+            </div>
+            <div class="service__title">
+                Померанский шпиц
+            </div>
+            <div class="service__subtitle">
+                От 1200 р.
+                <div class="service__icon">
+                    →
+                </div>
+            </div>
+        </div>
+        <div class="service__item">
+            <div class="service__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+                    <g filter="url(#filter0_b_106_21)">
+                      <path d="M49.3049 21.7344C42.5254 16.6678 36.0738 21.8087 25.6238 22.8351C10.2757 24.3319 6.26108 32.9958 10.4445 38.8215C14.6278 44.6472 24.0353 42.0398 29.8039 46.7661C35.7503 51.2799 35.5175 61.1062 42.0773 63.8495C48.6372 66.5927 56.0302 60.5679 53.7979 45.1919C52.4 34.715 55.7881 27.1552 49.3049 21.7344Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter1_b_106_21)">
+                      <path d="M37.2292 4.29402C36.9174 12.3097 32.5092 18.6911 27.3622 18.5232C22.2152 18.3554 18.3237 11.7741 18.6571 3.70415C18.9906 -4.36578 23.388 -10.72 28.5241 -10.5251C33.6603 -10.3301 37.5519 -3.74879 37.2292 4.29402Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter2_b_106_21)">
+                      <path d="M69.5324 29.5282C62.0729 31.4446 57.1991 36.8098 58.6305 41.458C60.0619 46.1063 67.346 48.401 74.8154 46.4594C82.2849 44.5179 87.1487 39.1779 85.7173 34.5296C84.2859 29.8813 77.0018 27.5867 69.5324 29.5282Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter3_b_106_21)">
+                      <path d="M61.5912 2.2247C57.6318 9.64459 50.5553 13.6098 45.5989 11.0095C40.6424 8.40912 40.1279 0.387545 44.0604 -7.04309C47.9929 -14.4737 55.0963 -18.4282 59.8912 -15.8923C64.686 -13.3564 65.5237 -5.20593 61.5912 2.2247Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter4_b_106_21)">
+                      <path d="M65.4127 5.04312C59.2525 10.7562 56.9872 18.6204 60.5012 22.6309C64.0153 26.6414 71.7647 25.2393 77.9249 19.5261C84.0851 13.813 86.3503 5.94882 82.8622 1.94871C79.3741 -2.05141 71.6096 -0.686735 65.4127 5.04312Z" fill="#ECECF9"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_b_106_21" x="-16.1079" y="-5.46307" width="95.3123" height="94.954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter1_b_106_21" x="-6.36279" y="-35.5294" width="68.6108" height="79.0559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter2_b_106_21" x="33.3811" y="3.83624" width="77.5859" height="68.3152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter3_b_106_21" x="16.4519" y="-41.6596" width="72.6309" height="78.4675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter4_b_106_21" x="33.8413" y="-25.343" width="75.6631" height="75.262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+                <img src="./assets/images/dog1.png">
+            </div>
+            <div class="service__title">
+                Померанский шпиц
+            </div>
+            <div class="service__subtitle">
+                От 1200 р.
+                <div class="service__icon">
+                    →
+                </div>
+            </div>
+        </div>
+        <div class="service__item">
+            <div class="service__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+                    <g filter="url(#filter0_b_106_21)">
+                      <path d="M49.3049 21.7344C42.5254 16.6678 36.0738 21.8087 25.6238 22.8351C10.2757 24.3319 6.26108 32.9958 10.4445 38.8215C14.6278 44.6472 24.0353 42.0398 29.8039 46.7661C35.7503 51.2799 35.5175 61.1062 42.0773 63.8495C48.6372 66.5927 56.0302 60.5679 53.7979 45.1919C52.4 34.715 55.7881 27.1552 49.3049 21.7344Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter1_b_106_21)">
+                      <path d="M37.2292 4.29402C36.9174 12.3097 32.5092 18.6911 27.3622 18.5232C22.2152 18.3554 18.3237 11.7741 18.6571 3.70415C18.9906 -4.36578 23.388 -10.72 28.5241 -10.5251C33.6603 -10.3301 37.5519 -3.74879 37.2292 4.29402Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter2_b_106_21)">
+                      <path d="M69.5324 29.5282C62.0729 31.4446 57.1991 36.8098 58.6305 41.458C60.0619 46.1063 67.346 48.401 74.8154 46.4594C82.2849 44.5179 87.1487 39.1779 85.7173 34.5296C84.2859 29.8813 77.0018 27.5867 69.5324 29.5282Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter3_b_106_21)">
+                      <path d="M61.5912 2.2247C57.6318 9.64459 50.5553 13.6098 45.5989 11.0095C40.6424 8.40912 40.1279 0.387545 44.0604 -7.04309C47.9929 -14.4737 55.0963 -18.4282 59.8912 -15.8923C64.686 -13.3564 65.5237 -5.20593 61.5912 2.2247Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter4_b_106_21)">
+                      <path d="M65.4127 5.04312C59.2525 10.7562 56.9872 18.6204 60.5012 22.6309C64.0153 26.6414 71.7647 25.2393 77.9249 19.5261C84.0851 13.813 86.3503 5.94882 82.8622 1.94871C79.3741 -2.05141 71.6096 -0.686735 65.4127 5.04312Z" fill="#ECECF9"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_b_106_21" x="-16.1079" y="-5.46307" width="95.3123" height="94.954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter1_b_106_21" x="-6.36279" y="-35.5294" width="68.6108" height="79.0559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter2_b_106_21" x="33.3811" y="3.83624" width="77.5859" height="68.3152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter3_b_106_21" x="16.4519" y="-41.6596" width="72.6309" height="78.4675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter4_b_106_21" x="33.8413" y="-25.343" width="75.6631" height="75.262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+                <img src="./assets/images/dog1.png">
+            </div>
+            <div class="service__title">
+                Померанский шпиц
+            </div>
+            <div class="service__subtitle">
+                От 1200 р.
+                <div class="service__icon">
+                    →
+                </div>
+            </div>
+        </div>
+        <div class="service__item">
+            <div class="service__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+                    <g filter="url(#filter0_b_106_21)">
+                      <path d="M49.3049 21.7344C42.5254 16.6678 36.0738 21.8087 25.6238 22.8351C10.2757 24.3319 6.26108 32.9958 10.4445 38.8215C14.6278 44.6472 24.0353 42.0398 29.8039 46.7661C35.7503 51.2799 35.5175 61.1062 42.0773 63.8495C48.6372 66.5927 56.0302 60.5679 53.7979 45.1919C52.4 34.715 55.7881 27.1552 49.3049 21.7344Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter1_b_106_21)">
+                      <path d="M37.2292 4.29402C36.9174 12.3097 32.5092 18.6911 27.3622 18.5232C22.2152 18.3554 18.3237 11.7741 18.6571 3.70415C18.9906 -4.36578 23.388 -10.72 28.5241 -10.5251C33.6603 -10.3301 37.5519 -3.74879 37.2292 4.29402Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter2_b_106_21)">
+                      <path d="M69.5324 29.5282C62.0729 31.4446 57.1991 36.8098 58.6305 41.458C60.0619 46.1063 67.346 48.401 74.8154 46.4594C82.2849 44.5179 87.1487 39.1779 85.7173 34.5296C84.2859 29.8813 77.0018 27.5867 69.5324 29.5282Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter3_b_106_21)">
+                      <path d="M61.5912 2.2247C57.6318 9.64459 50.5553 13.6098 45.5989 11.0095C40.6424 8.40912 40.1279 0.387545 44.0604 -7.04309C47.9929 -14.4737 55.0963 -18.4282 59.8912 -15.8923C64.686 -13.3564 65.5237 -5.20593 61.5912 2.2247Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter4_b_106_21)">
+                      <path d="M65.4127 5.04312C59.2525 10.7562 56.9872 18.6204 60.5012 22.6309C64.0153 26.6414 71.7647 25.2393 77.9249 19.5261C84.0851 13.813 86.3503 5.94882 82.8622 1.94871C79.3741 -2.05141 71.6096 -0.686735 65.4127 5.04312Z" fill="#ECECF9"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_b_106_21" x="-16.1079" y="-5.46307" width="95.3123" height="94.954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter1_b_106_21" x="-6.36279" y="-35.5294" width="68.6108" height="79.0559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter2_b_106_21" x="33.3811" y="3.83624" width="77.5859" height="68.3152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter3_b_106_21" x="16.4519" y="-41.6596" width="72.6309" height="78.4675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter4_b_106_21" x="33.8413" y="-25.343" width="75.6631" height="75.262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+                <img src="./assets/images/dog1.png">
+            </div>
+            <div class="service__title">
+                Померанский шпиц
+            </div>
+            <div class="service__subtitle">
+                От 1200 р.
+                <div class="service__icon">
+                    →
+                </div>
+            </div>
+        </div>
+        <div class="service__item">
+            <div class="service__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+                    <g filter="url(#filter0_b_106_21)">
+                      <path d="M49.3049 21.7344C42.5254 16.6678 36.0738 21.8087 25.6238 22.8351C10.2757 24.3319 6.26108 32.9958 10.4445 38.8215C14.6278 44.6472 24.0353 42.0398 29.8039 46.7661C35.7503 51.2799 35.5175 61.1062 42.0773 63.8495C48.6372 66.5927 56.0302 60.5679 53.7979 45.1919C52.4 34.715 55.7881 27.1552 49.3049 21.7344Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter1_b_106_21)">
+                      <path d="M37.2292 4.29402C36.9174 12.3097 32.5092 18.6911 27.3622 18.5232C22.2152 18.3554 18.3237 11.7741 18.6571 3.70415C18.9906 -4.36578 23.388 -10.72 28.5241 -10.5251C33.6603 -10.3301 37.5519 -3.74879 37.2292 4.29402Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter2_b_106_21)">
+                      <path d="M69.5324 29.5282C62.0729 31.4446 57.1991 36.8098 58.6305 41.458C60.0619 46.1063 67.346 48.401 74.8154 46.4594C82.2849 44.5179 87.1487 39.1779 85.7173 34.5296C84.2859 29.8813 77.0018 27.5867 69.5324 29.5282Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter3_b_106_21)">
+                      <path d="M61.5912 2.2247C57.6318 9.64459 50.5553 13.6098 45.5989 11.0095C40.6424 8.40912 40.1279 0.387545 44.0604 -7.04309C47.9929 -14.4737 55.0963 -18.4282 59.8912 -15.8923C64.686 -13.3564 65.5237 -5.20593 61.5912 2.2247Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter4_b_106_21)">
+                      <path d="M65.4127 5.04312C59.2525 10.7562 56.9872 18.6204 60.5012 22.6309C64.0153 26.6414 71.7647 25.2393 77.9249 19.5261C84.0851 13.813 86.3503 5.94882 82.8622 1.94871C79.3741 -2.05141 71.6096 -0.686735 65.4127 5.04312Z" fill="#ECECF9"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_b_106_21" x="-16.1079" y="-5.46307" width="95.3123" height="94.954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter1_b_106_21" x="-6.36279" y="-35.5294" width="68.6108" height="79.0559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter2_b_106_21" x="33.3811" y="3.83624" width="77.5859" height="68.3152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter3_b_106_21" x="16.4519" y="-41.6596" width="72.6309" height="78.4675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter4_b_106_21" x="33.8413" y="-25.343" width="75.6631" height="75.262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+                <img src="./assets/images/dog1.png">
+            </div>
+            <div class="service__title">
+                Померанский шпиц
+            </div>
+            <div class="service__subtitle">
+                От 1200 р.
+                <div class="service__icon">
+                    →
+                </div>
+            </div>
+        </div>
+        <div class="service__item">
+            <div class="service__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+                    <g filter="url(#filter0_b_106_21)">
+                      <path d="M49.3049 21.7344C42.5254 16.6678 36.0738 21.8087 25.6238 22.8351C10.2757 24.3319 6.26108 32.9958 10.4445 38.8215C14.6278 44.6472 24.0353 42.0398 29.8039 46.7661C35.7503 51.2799 35.5175 61.1062 42.0773 63.8495C48.6372 66.5927 56.0302 60.5679 53.7979 45.1919C52.4 34.715 55.7881 27.1552 49.3049 21.7344Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter1_b_106_21)">
+                      <path d="M37.2292 4.29402C36.9174 12.3097 32.5092 18.6911 27.3622 18.5232C22.2152 18.3554 18.3237 11.7741 18.6571 3.70415C18.9906 -4.36578 23.388 -10.72 28.5241 -10.5251C33.6603 -10.3301 37.5519 -3.74879 37.2292 4.29402Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter2_b_106_21)">
+                      <path d="M69.5324 29.5282C62.0729 31.4446 57.1991 36.8098 58.6305 41.458C60.0619 46.1063 67.346 48.401 74.8154 46.4594C82.2849 44.5179 87.1487 39.1779 85.7173 34.5296C84.2859 29.8813 77.0018 27.5867 69.5324 29.5282Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter3_b_106_21)">
+                      <path d="M61.5912 2.2247C57.6318 9.64459 50.5553 13.6098 45.5989 11.0095C40.6424 8.40912 40.1279 0.387545 44.0604 -7.04309C47.9929 -14.4737 55.0963 -18.4282 59.8912 -15.8923C64.686 -13.3564 65.5237 -5.20593 61.5912 2.2247Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter4_b_106_21)">
+                      <path d="M65.4127 5.04312C59.2525 10.7562 56.9872 18.6204 60.5012 22.6309C64.0153 26.6414 71.7647 25.2393 77.9249 19.5261C84.0851 13.813 86.3503 5.94882 82.8622 1.94871C79.3741 -2.05141 71.6096 -0.686735 65.4127 5.04312Z" fill="#ECECF9"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_b_106_21" x="-16.1079" y="-5.46307" width="95.3123" height="94.954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter1_b_106_21" x="-6.36279" y="-35.5294" width="68.6108" height="79.0559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter2_b_106_21" x="33.3811" y="3.83624" width="77.5859" height="68.3152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter3_b_106_21" x="16.4519" y="-41.6596" width="72.6309" height="78.4675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter4_b_106_21" x="33.8413" y="-25.343" width="75.6631" height="75.262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+                <img src="./assets/images/dog1.png">
+            </div>
+            <div class="service__title">
+                Померанский шпиц
+            </div>
+            <div class="service__subtitle">
+                От 1200 р.
+                <div class="service__icon">
+                    →
+                </div>
+            </div>
+        </div>
+        <div class="service__item">
+            <div class="service__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+                    <g filter="url(#filter0_b_106_21)">
+                      <path d="M49.3049 21.7344C42.5254 16.6678 36.0738 21.8087 25.6238 22.8351C10.2757 24.3319 6.26108 32.9958 10.4445 38.8215C14.6278 44.6472 24.0353 42.0398 29.8039 46.7661C35.7503 51.2799 35.5175 61.1062 42.0773 63.8495C48.6372 66.5927 56.0302 60.5679 53.7979 45.1919C52.4 34.715 55.7881 27.1552 49.3049 21.7344Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter1_b_106_21)">
+                      <path d="M37.2292 4.29402C36.9174 12.3097 32.5092 18.6911 27.3622 18.5232C22.2152 18.3554 18.3237 11.7741 18.6571 3.70415C18.9906 -4.36578 23.388 -10.72 28.5241 -10.5251C33.6603 -10.3301 37.5519 -3.74879 37.2292 4.29402Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter2_b_106_21)">
+                      <path d="M69.5324 29.5282C62.0729 31.4446 57.1991 36.8098 58.6305 41.458C60.0619 46.1063 67.346 48.401 74.8154 46.4594C82.2849 44.5179 87.1487 39.1779 85.7173 34.5296C84.2859 29.8813 77.0018 27.5867 69.5324 29.5282Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter3_b_106_21)">
+                      <path d="M61.5912 2.2247C57.6318 9.64459 50.5553 13.6098 45.5989 11.0095C40.6424 8.40912 40.1279 0.387545 44.0604 -7.04309C47.9929 -14.4737 55.0963 -18.4282 59.8912 -15.8923C64.686 -13.3564 65.5237 -5.20593 61.5912 2.2247Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter4_b_106_21)">
+                      <path d="M65.4127 5.04312C59.2525 10.7562 56.9872 18.6204 60.5012 22.6309C64.0153 26.6414 71.7647 25.2393 77.9249 19.5261C84.0851 13.813 86.3503 5.94882 82.8622 1.94871C79.3741 -2.05141 71.6096 -0.686735 65.4127 5.04312Z" fill="#ECECF9"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_b_106_21" x="-16.1079" y="-5.46307" width="95.3123" height="94.954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter1_b_106_21" x="-6.36279" y="-35.5294" width="68.6108" height="79.0559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter2_b_106_21" x="33.3811" y="3.83624" width="77.5859" height="68.3152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter3_b_106_21" x="16.4519" y="-41.6596" width="72.6309" height="78.4675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter4_b_106_21" x="33.8413" y="-25.343" width="75.6631" height="75.262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+                <img src="./assets/images/dog1.png">
+            </div>
+            <div class="service__title">
+                Померанский шпиц
+            </div>
+            <div class="service__subtitle">
+                От 1200 р.
+                <div class="service__icon">
+                    →
+                </div>
+            </div>
+        </div>
+        <div class="service__item">
+            <div class="service__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+                    <g filter="url(#filter0_b_106_21)">
+                      <path d="M49.3049 21.7344C42.5254 16.6678 36.0738 21.8087 25.6238 22.8351C10.2757 24.3319 6.26108 32.9958 10.4445 38.8215C14.6278 44.6472 24.0353 42.0398 29.8039 46.7661C35.7503 51.2799 35.5175 61.1062 42.0773 63.8495C48.6372 66.5927 56.0302 60.5679 53.7979 45.1919C52.4 34.715 55.7881 27.1552 49.3049 21.7344Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter1_b_106_21)">
+                      <path d="M37.2292 4.29402C36.9174 12.3097 32.5092 18.6911 27.3622 18.5232C22.2152 18.3554 18.3237 11.7741 18.6571 3.70415C18.9906 -4.36578 23.388 -10.72 28.5241 -10.5251C33.6603 -10.3301 37.5519 -3.74879 37.2292 4.29402Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter2_b_106_21)">
+                      <path d="M69.5324 29.5282C62.0729 31.4446 57.1991 36.8098 58.6305 41.458C60.0619 46.1063 67.346 48.401 74.8154 46.4594C82.2849 44.5179 87.1487 39.1779 85.7173 34.5296C84.2859 29.8813 77.0018 27.5867 69.5324 29.5282Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter3_b_106_21)">
+                      <path d="M61.5912 2.2247C57.6318 9.64459 50.5553 13.6098 45.5989 11.0095C40.6424 8.40912 40.1279 0.387545 44.0604 -7.04309C47.9929 -14.4737 55.0963 -18.4282 59.8912 -15.8923C64.686 -13.3564 65.5237 -5.20593 61.5912 2.2247Z" fill="#ECECF9"/>
+                    </g>
+                    <g filter="url(#filter4_b_106_21)">
+                      <path d="M65.4127 5.04312C59.2525 10.7562 56.9872 18.6204 60.5012 22.6309C64.0153 26.6414 71.7647 25.2393 77.9249 19.5261C84.0851 13.813 86.3503 5.94882 82.8622 1.94871C79.3741 -2.05141 71.6096 -0.686735 65.4127 5.04312Z" fill="#ECECF9"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_b_106_21" x="-16.1079" y="-5.46307" width="95.3123" height="94.954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter1_b_106_21" x="-6.36279" y="-35.5294" width="68.6108" height="79.0559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter2_b_106_21" x="33.3811" y="3.83624" width="77.5859" height="68.3152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter3_b_106_21" x="16.4519" y="-41.6596" width="72.6309" height="78.4675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                      <filter id="filter4_b_106_21" x="33.8413" y="-25.343" width="75.6631" height="75.262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_106_21"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_106_21" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+                <img src="./assets/images/dog1.png">
+            </div>
+            <div class="service__title">
+                Померанский шпиц
+            </div>
+            <div class="service__subtitle">
+                От 1200 р.
+                <div class="service__icon">
+                    →
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="price-block container">
+  <div class="price-items">
+      <div class="price-item-outer">
+        <div class="price-item-inner">
+          <div class="item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="105" height="90" viewBox="0 0 105 90" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M55.4806 0.800796C76.8393 1.14678 98.5211 11.738 104.114 32.3817C109.155 50.9858 91.7329 65.3768 75.9772 76.4532C61.324 86.7544 43.5279 95.0885 28.2791 85.694C9.14177 73.9038 -5.11403 52.1471 1.75053 30.7235C8.67245 9.12086 32.8263 0.433823 55.4806 0.800796Z" fill="#C3C4D0"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="88" height="75" viewBox="0 0 88 75" fill="none">
+              <path d="M34.6093 26.1426L35.7915 25.2195C39.6726 30.1901 47.8672 28.6441 49.8517 22.2706C49.9869 21.8363 50.1141 20.7905 50.2037 18.4619L50.2037 18.4618C50.2781 16.5343 50.3867 15.1542 50.6948 13.99C51.02 12.7609 51.5454 11.8487 52.2936 10.8075L52.2938 10.8073C52.8507 10.0326 53.6264 9.24792 54.4064 8.60002C55.1718 7.9642 56.0571 7.36358 56.8629 7.04854L56.8629 7.04851L57.5338 6.78624L59.58 5.98638V8.18329V9.89154V11.6V12.2575L59.0964 12.7031L58.0703 13.6484C58.0703 13.6485 58.0702 13.6485 58.0702 13.6485C57.5419 14.1354 57.0872 14.7358 56.9037 15.1093L56.9036 15.1095C56.724 15.4749 56.6718 15.6067 56.6216 15.9579C56.5548 16.4247 56.516 17.1655 56.4514 18.7366L56.4514 18.7367C56.3563 21.0475 56.2157 22.5333 55.9342 23.6285L55.9342 23.6286C54.811 27.9979 51.5754 31.692 47.403 33.3549C45.5323 34.1005 44.3821 34.3396 42.36 34.4051L41.1717 34.4436L36.5291 37.1628L35.771 35.8684L36.5291 37.1628C31.2928 40.2295 27.4653 42.5108 24.754 44.187C22.0124 45.8819 20.4901 46.911 19.7987 47.4883L19.7986 47.4884C16.174 50.5139 14.4351 54.2287 14.4339 58.9478C14.4334 60.8562 14.7322 62.4319 15.3114 63.8116L13.9283 64.3923L15.3114 63.8117C15.3909 64.0009 15.4653 64.1894 15.5222 64.3448C15.5501 64.4209 15.5784 64.5017 15.6019 64.5768C15.6132 64.6131 15.6283 64.6637 15.6422 64.7199L15.6428 64.7223C15.6488 64.7459 15.6908 64.9102 15.6908 65.1088C15.6908 65.8762 15.1526 66.2682 15.0456 66.3426C14.8792 66.4584 14.7281 66.5125 14.6767 66.5303C14.5545 66.5728 14.4513 66.5907 14.4208 66.596C14.3377 66.6105 14.2595 66.6178 14.215 66.6216C14.1123 66.6305 13.9842 66.6373 13.8485 66.6429C13.5698 66.6546 13.1787 66.6647 12.7097 66.673C11.768 66.6897 10.4755 66.7 9.05803 66.7C6.12843 66.7 4.73351 66.7201 3.89775 66.8487C3.52405 66.9062 3.33922 66.9762 3.21238 67.0415C3.06878 67.1155 2.9152 67.2258 2.61251 67.4837L1.64147 66.3439L2.61249 67.4837C1.83935 68.1424 1.5 68.862 1.5 69.9965C1.5 70.7651 1.66441 71.3251 1.93202 71.7589C2.20085 72.1946 2.63793 72.6066 3.34849 72.9743L3.34862 72.9743L3.80033 73.2081L24.6529 73.2522C35.0645 73.2742 40.3553 73.2836 43.128 73.2466C44.5274 73.2279 45.2289 73.1976 45.6105 73.1588C45.7001 73.1497 45.7609 73.1412 45.8011 73.1344C45.8198 73.1312 45.8331 73.1286 45.8418 73.1267C45.8443 73.1255 45.8471 73.1241 45.8504 73.1224L45.8516 73.1245L45.8505 73.1224C46.8331 72.6234 47.1625 71.6214 46.6486 70.6213L46.6485 70.6212C46.2369 69.82 45.4234 68.9641 44.3058 68.2381C43.1998 67.5197 41.8883 66.9899 40.5909 66.774L40.5908 66.774L39.9571 66.6685L38.0035 66.3432L38.846 64.5507L39.3467 63.4856L39.3467 63.4855C40.3643 61.3211 40.6757 58.5211 40.1611 56.2258L40.1611 56.2256C39.8454 54.8168 38.9542 52.9394 38.0032 51.7092L37.1279 50.5774L36.3119 49.5221L37.2647 48.5884L38.382 47.4935L38.3821 47.4934L39.4995 46.3986L40.6065 45.314L41.6544 46.4557L42.4322 47.3032L42.4323 47.3033C44.2888 49.3266 45.8301 52.6063 46.3938 55.5896C46.6435 56.9105 46.691 58.8512 46.5408 60.4452H48.25H51.7117H53.2117V61.9452V67.0898C53.2117 69.2177 53.2236 70.4964 53.2607 71.3046C53.2977 72.1127 53.3578 72.2798 53.3598 72.2852C53.4994 72.6175 53.5931 72.7414 53.6561 72.8069C53.7171 72.8704 53.8303 72.9639 54.1425 73.1065C54.1454 73.1078 54.1484 73.1094 54.1518 73.1111C54.2002 73.1357 54.3262 73.1998 55.2228 73.2381C56.1933 73.2796 57.8601 73.2875 60.9723 73.2892C64.6156 73.2912 66.3176 73.2886 67.2497 73.194C67.6906 73.1492 67.8209 73.0944 67.8528 73.0794C67.8848 73.0646 67.9181 73.0488 68.1696 72.829L68.17 72.8286C68.2126 72.7915 68.3408 72.6377 68.4602 72.3477C68.5744 72.0702 68.628 71.794 68.628 71.5992C68.628 71.0541 68.4041 70.3853 67.1716 69.1585C66.1339 68.1258 64.6728 67.2999 63.2195 66.9318C62.8719 66.8438 62.4228 66.7223 62.0633 66.5042C61.854 66.3772 61.5797 66.1629 61.3854 65.8114C61.1812 65.4421 61.1494 65.0752 61.1724 64.796L34.6093 26.1426ZM34.6093 26.1426L35.7915 25.2195M34.6093 26.1426L35.7915 25.2195M61.5055 61.9021L61.5055 61.9019L61.8069 59.3817L61.8866 58.7146L62.4374 58.33L63.4129 57.6487L63.4132 57.6485C64.5853 56.8304 66.2679 55.1111 67.0638 53.918L68.3117 54.7504L67.0638 53.918C68.8154 51.2925 69.522 48.9314 69.5027 45.7634C69.4843 42.78 68.7531 40.361 67.1682 37.9794C66.7722 37.3842 66.1212 36.5824 65.4719 35.8729C65.1509 35.5221 64.8463 35.2113 64.5912 34.9733C64.4637 34.8542 64.357 34.7614 64.2734 34.6942C64.1986 34.634 64.1641 34.6123 64.1643 34.612C64.1643 34.612 64.1662 34.613 64.1698 34.6151L64.8998 33.3047L64.1701 34.6152C63.7227 34.3661 63.4697 33.9807 63.3384 33.6072C63.2336 33.3087 63.1955 32.9875 63.1737 32.7162C63.1284 32.1499 63.1203 31.2429 63.1203 29.8171V26.4853V24.986L64.6196 24.9853L69.9982 24.9827C73.1156 24.9812 74.6701 24.9583 75.7578 24.8069C76.737 24.6707 77.3214 24.4343 78.5091 23.858C80.1327 23.0701 81.668 21.8341 82.3541 20.8794C82.7232 20.3658 83.6634 18.86 84.5802 17.3352C85.0311 16.5853 85.4639 15.8516 85.8014 15.2627C85.9705 14.9678 86.1126 14.7145 86.22 14.5163C86.2738 14.4172 86.3163 14.3365 86.3479 14.2742C86.3766 14.2176 86.3891 14.1903 86.3917 14.1847C86.3921 14.1838 86.3923 14.1835 86.3921 14.1837C86.6743 13.5109 86.3891 12.5656 85.5514 12.1068C85.537 12.1047 85.3925 12.062 84.9799 12.0179C84.4712 11.9636 83.7096 11.9194 82.5511 11.8767L61.5055 61.9021ZM61.5055 61.9021C61.3425 63.2664 61.1899 64.584 61.1724 64.7958L61.5055 61.9021ZM71.408 6.47004L71.4079 6.46999C68.6619 3.81965 68.2441 3.52006 67.4044 3.12338L67.4042 3.12328C66.7631 2.82034 65.8995 2.51738 65.5577 2.44683L71.408 6.47004ZM71.408 6.47004C73.6712 8.65414 75.1787 10.042 76.7911 10.8337M71.408 6.47004L76.7911 10.8337M69.3897 6.83562L69.3897 6.83564C72.086 7.95701 72.4896 11.3455 70.4745 13.2671L70.4745 13.2671C69.8252 13.8862 68.9606 14.1749 68.1936 14.248C67.4244 14.3213 66.5255 14.1998 65.7698 13.7273C63.0796 12.0452 63.5437 8.09039 66.3368 6.85462L69.3897 6.83562ZM69.3897 6.83562C68.9222 6.64122 68.4192 6.50141 67.8621 6.50306M69.3897 6.83562L67.8621 6.50306M45.0272 3.51076C44.1784 4.11996 43.0704 5.11984 41.093 6.99398C39.01 8.96833 37.6074 10.3365 36.6465 11.3438C35.6765 12.3606 35.2194 12.9459 34.9725 13.3587L45.0272 3.51076ZM45.0272 3.51076C45.7851 2.96673 46.3179 2.74628 47.1797 2.50851M45.0272 3.51076L47.1797 2.50851M47.1797 2.50851C47.1943 2.50665 47.2438 2.4997 47.3429 2.4905C47.4969 2.4762 47.7095 2.46152 47.9802 2.44707C48.5196 2.41829 49.2448 2.39277 50.102 2.37113C51.8137 2.32792 54.0153 2.30105 56.2313 2.29258C58.4472 2.2841 60.6686 2.29405 62.4198 2.32403C63.2963 2.33904 64.0472 2.35895 64.6174 2.38361C64.9032 2.39597 65.1348 2.40916 65.3098 2.42274C65.4591 2.43431 65.5318 2.44368 65.5524 2.44634L47.1797 2.50851ZM35.7915 25.2195C34.6094 23.7055 33.8814 21.5825 33.7298 19.3582M35.7915 25.2195L33.7298 19.3582M33.7298 19.3582C33.578 17.1324 34.0137 14.9627 34.9724 13.3588L33.7298 19.3582ZM76.7911 10.8337C78.4721 11.6591 80.1592 11.7886 82.551 11.8767L76.7911 10.8337ZM67.8621 6.50306C67.3008 6.50473 66.8003 6.64953 66.3371 6.85451L67.8621 6.50306ZM13.9662 63.6318C13.9667 63.6318 13.9657 63.6319 13.9632 63.6321L13.9662 63.6318Z" stroke="#240401" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="item__title">
+            Прайс-лист на <br> декоративные породы
+          </div>
+          <div class="item__subtitle">
+            Комплексный уход за небольшими <br> декоративными породами
+          </div>
+          <div class="item__download">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M2.33334 19.8333L3.05784 22.7325C3.18402 23.2373 3.4753 23.6854 3.8854 24.0057C4.29549 24.3259 4.80085 24.4999 5.32118 24.5H22.6788C23.1992 24.4999 23.7045 24.3259 24.1146 24.0057C24.5247 23.6854 24.816 23.2373 24.9422 22.7325L25.6667 19.8333M14 17.5V3.5V17.5ZM14 17.5L9.33334 12.8333L14 17.5ZM14 17.5L18.6667 12.8333L14 17.5Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="price-item-outer">
+        <div class="price-item-inner">
+          <div class="item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="105" height="90" viewBox="0 0 105 90" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M55.4806 0.800796C76.8393 1.14678 98.5211 11.738 104.114 32.3817C109.155 50.9858 91.7329 65.3768 75.9772 76.4532C61.324 86.7544 43.5279 95.0885 28.2791 85.694C9.14177 73.9038 -5.11403 52.1471 1.75053 30.7235C8.67245 9.12086 32.8263 0.433823 55.4806 0.800796Z" fill="#C3C4D0"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="88" height="75" viewBox="0 0 88 75" fill="none">
+              <path d="M34.6093 26.1426L35.7915 25.2195C39.6726 30.1901 47.8672 28.6441 49.8517 22.2706C49.9869 21.8363 50.1141 20.7905 50.2037 18.4619L50.2037 18.4618C50.2781 16.5343 50.3867 15.1542 50.6948 13.99C51.02 12.7609 51.5454 11.8487 52.2936 10.8075L52.2938 10.8073C52.8507 10.0326 53.6264 9.24792 54.4064 8.60002C55.1718 7.9642 56.0571 7.36358 56.8629 7.04854L56.8629 7.04851L57.5338 6.78624L59.58 5.98638V8.18329V9.89154V11.6V12.2575L59.0964 12.7031L58.0703 13.6484C58.0703 13.6485 58.0702 13.6485 58.0702 13.6485C57.5419 14.1354 57.0872 14.7358 56.9037 15.1093L56.9036 15.1095C56.724 15.4749 56.6718 15.6067 56.6216 15.9579C56.5548 16.4247 56.516 17.1655 56.4514 18.7366L56.4514 18.7367C56.3563 21.0475 56.2157 22.5333 55.9342 23.6285L55.9342 23.6286C54.811 27.9979 51.5754 31.692 47.403 33.3549C45.5323 34.1005 44.3821 34.3396 42.36 34.4051L41.1717 34.4436L36.5291 37.1628L35.771 35.8684L36.5291 37.1628C31.2928 40.2295 27.4653 42.5108 24.754 44.187C22.0124 45.8819 20.4901 46.911 19.7987 47.4883L19.7986 47.4884C16.174 50.5139 14.4351 54.2287 14.4339 58.9478C14.4334 60.8562 14.7322 62.4319 15.3114 63.8116L13.9283 64.3923L15.3114 63.8117C15.3909 64.0009 15.4653 64.1894 15.5222 64.3448C15.5501 64.4209 15.5784 64.5017 15.6019 64.5768C15.6132 64.6131 15.6283 64.6637 15.6422 64.7199L15.6428 64.7223C15.6488 64.7459 15.6908 64.9102 15.6908 65.1088C15.6908 65.8762 15.1526 66.2682 15.0456 66.3426C14.8792 66.4584 14.7281 66.5125 14.6767 66.5303C14.5545 66.5728 14.4513 66.5907 14.4208 66.596C14.3377 66.6105 14.2595 66.6178 14.215 66.6216C14.1123 66.6305 13.9842 66.6373 13.8485 66.6429C13.5698 66.6546 13.1787 66.6647 12.7097 66.673C11.768 66.6897 10.4755 66.7 9.05803 66.7C6.12843 66.7 4.73351 66.7201 3.89775 66.8487C3.52405 66.9062 3.33922 66.9762 3.21238 67.0415C3.06878 67.1155 2.9152 67.2258 2.61251 67.4837L1.64147 66.3439L2.61249 67.4837C1.83935 68.1424 1.5 68.862 1.5 69.9965C1.5 70.7651 1.66441 71.3251 1.93202 71.7589C2.20085 72.1946 2.63793 72.6066 3.34849 72.9743L3.34862 72.9743L3.80033 73.2081L24.6529 73.2522C35.0645 73.2742 40.3553 73.2836 43.128 73.2466C44.5274 73.2279 45.2289 73.1976 45.6105 73.1588C45.7001 73.1497 45.7609 73.1412 45.8011 73.1344C45.8198 73.1312 45.8331 73.1286 45.8418 73.1267C45.8443 73.1255 45.8471 73.1241 45.8504 73.1224L45.8516 73.1245L45.8505 73.1224C46.8331 72.6234 47.1625 71.6214 46.6486 70.6213L46.6485 70.6212C46.2369 69.82 45.4234 68.9641 44.3058 68.2381C43.1998 67.5197 41.8883 66.9899 40.5909 66.774L40.5908 66.774L39.9571 66.6685L38.0035 66.3432L38.846 64.5507L39.3467 63.4856L39.3467 63.4855C40.3643 61.3211 40.6757 58.5211 40.1611 56.2258L40.1611 56.2256C39.8454 54.8168 38.9542 52.9394 38.0032 51.7092L37.1279 50.5774L36.3119 49.5221L37.2647 48.5884L38.382 47.4935L38.3821 47.4934L39.4995 46.3986L40.6065 45.314L41.6544 46.4557L42.4322 47.3032L42.4323 47.3033C44.2888 49.3266 45.8301 52.6063 46.3938 55.5896C46.6435 56.9105 46.691 58.8512 46.5408 60.4452H48.25H51.7117H53.2117V61.9452V67.0898C53.2117 69.2177 53.2236 70.4964 53.2607 71.3046C53.2977 72.1127 53.3578 72.2798 53.3598 72.2852C53.4994 72.6175 53.5931 72.7414 53.6561 72.8069C53.7171 72.8704 53.8303 72.9639 54.1425 73.1065C54.1454 73.1078 54.1484 73.1094 54.1518 73.1111C54.2002 73.1357 54.3262 73.1998 55.2228 73.2381C56.1933 73.2796 57.8601 73.2875 60.9723 73.2892C64.6156 73.2912 66.3176 73.2886 67.2497 73.194C67.6906 73.1492 67.8209 73.0944 67.8528 73.0794C67.8848 73.0646 67.9181 73.0488 68.1696 72.829L68.17 72.8286C68.2126 72.7915 68.3408 72.6377 68.4602 72.3477C68.5744 72.0702 68.628 71.794 68.628 71.5992C68.628 71.0541 68.4041 70.3853 67.1716 69.1585C66.1339 68.1258 64.6728 67.2999 63.2195 66.9318C62.8719 66.8438 62.4228 66.7223 62.0633 66.5042C61.854 66.3772 61.5797 66.1629 61.3854 65.8114C61.1812 65.4421 61.1494 65.0752 61.1724 64.796L34.6093 26.1426ZM34.6093 26.1426L35.7915 25.2195M34.6093 26.1426L35.7915 25.2195M61.5055 61.9021L61.5055 61.9019L61.8069 59.3817L61.8866 58.7146L62.4374 58.33L63.4129 57.6487L63.4132 57.6485C64.5853 56.8304 66.2679 55.1111 67.0638 53.918L68.3117 54.7504L67.0638 53.918C68.8154 51.2925 69.522 48.9314 69.5027 45.7634C69.4843 42.78 68.7531 40.361 67.1682 37.9794C66.7722 37.3842 66.1212 36.5824 65.4719 35.8729C65.1509 35.5221 64.8463 35.2113 64.5912 34.9733C64.4637 34.8542 64.357 34.7614 64.2734 34.6942C64.1986 34.634 64.1641 34.6123 64.1643 34.612C64.1643 34.612 64.1662 34.613 64.1698 34.6151L64.8998 33.3047L64.1701 34.6152C63.7227 34.3661 63.4697 33.9807 63.3384 33.6072C63.2336 33.3087 63.1955 32.9875 63.1737 32.7162C63.1284 32.1499 63.1203 31.2429 63.1203 29.8171V26.4853V24.986L64.6196 24.9853L69.9982 24.9827C73.1156 24.9812 74.6701 24.9583 75.7578 24.8069C76.737 24.6707 77.3214 24.4343 78.5091 23.858C80.1327 23.0701 81.668 21.8341 82.3541 20.8794C82.7232 20.3658 83.6634 18.86 84.5802 17.3352C85.0311 16.5853 85.4639 15.8516 85.8014 15.2627C85.9705 14.9678 86.1126 14.7145 86.22 14.5163C86.2738 14.4172 86.3163 14.3365 86.3479 14.2742C86.3766 14.2176 86.3891 14.1903 86.3917 14.1847C86.3921 14.1838 86.3923 14.1835 86.3921 14.1837C86.6743 13.5109 86.3891 12.5656 85.5514 12.1068C85.537 12.1047 85.3925 12.062 84.9799 12.0179C84.4712 11.9636 83.7096 11.9194 82.5511 11.8767L61.5055 61.9021ZM61.5055 61.9021C61.3425 63.2664 61.1899 64.584 61.1724 64.7958L61.5055 61.9021ZM71.408 6.47004L71.4079 6.46999C68.6619 3.81965 68.2441 3.52006 67.4044 3.12338L67.4042 3.12328C66.7631 2.82034 65.8995 2.51738 65.5577 2.44683L71.408 6.47004ZM71.408 6.47004C73.6712 8.65414 75.1787 10.042 76.7911 10.8337M71.408 6.47004L76.7911 10.8337M69.3897 6.83562L69.3897 6.83564C72.086 7.95701 72.4896 11.3455 70.4745 13.2671L70.4745 13.2671C69.8252 13.8862 68.9606 14.1749 68.1936 14.248C67.4244 14.3213 66.5255 14.1998 65.7698 13.7273C63.0796 12.0452 63.5437 8.09039 66.3368 6.85462L69.3897 6.83562ZM69.3897 6.83562C68.9222 6.64122 68.4192 6.50141 67.8621 6.50306M69.3897 6.83562L67.8621 6.50306M45.0272 3.51076C44.1784 4.11996 43.0704 5.11984 41.093 6.99398C39.01 8.96833 37.6074 10.3365 36.6465 11.3438C35.6765 12.3606 35.2194 12.9459 34.9725 13.3587L45.0272 3.51076ZM45.0272 3.51076C45.7851 2.96673 46.3179 2.74628 47.1797 2.50851M45.0272 3.51076L47.1797 2.50851M47.1797 2.50851C47.1943 2.50665 47.2438 2.4997 47.3429 2.4905C47.4969 2.4762 47.7095 2.46152 47.9802 2.44707C48.5196 2.41829 49.2448 2.39277 50.102 2.37113C51.8137 2.32792 54.0153 2.30105 56.2313 2.29258C58.4472 2.2841 60.6686 2.29405 62.4198 2.32403C63.2963 2.33904 64.0472 2.35895 64.6174 2.38361C64.9032 2.39597 65.1348 2.40916 65.3098 2.42274C65.4591 2.43431 65.5318 2.44368 65.5524 2.44634L47.1797 2.50851ZM35.7915 25.2195C34.6094 23.7055 33.8814 21.5825 33.7298 19.3582M35.7915 25.2195L33.7298 19.3582M33.7298 19.3582C33.578 17.1324 34.0137 14.9627 34.9724 13.3588L33.7298 19.3582ZM76.7911 10.8337C78.4721 11.6591 80.1592 11.7886 82.551 11.8767L76.7911 10.8337ZM67.8621 6.50306C67.3008 6.50473 66.8003 6.64953 66.3371 6.85451L67.8621 6.50306ZM13.9662 63.6318C13.9667 63.6318 13.9657 63.6319 13.9632 63.6321L13.9662 63.6318Z" stroke="#240401" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="item__title">
+            Прайс-лист на <br> декоративные породы
+          </div>
+          <div class="item__subtitle">
+            Комплексный уход за небольшими <br> декоративными породами
+          </div>
+          <div class="item__download">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M2.33334 19.8333L3.05784 22.7325C3.18402 23.2373 3.4753 23.6854 3.8854 24.0057C4.29549 24.3259 4.80085 24.4999 5.32118 24.5H22.6788C23.1992 24.4999 23.7045 24.3259 24.1146 24.0057C24.5247 23.6854 24.816 23.2373 24.9422 22.7325L25.6667 19.8333M14 17.5V3.5V17.5ZM14 17.5L9.33334 12.8333L14 17.5ZM14 17.5L18.6667 12.8333L14 17.5Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="price-item-outer">
+        <div class="price-item-inner">
+          <div class="item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="105" height="90" viewBox="0 0 105 90" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M55.4806 0.800796C76.8393 1.14678 98.5211 11.738 104.114 32.3817C109.155 50.9858 91.7329 65.3768 75.9772 76.4532C61.324 86.7544 43.5279 95.0885 28.2791 85.694C9.14177 73.9038 -5.11403 52.1471 1.75053 30.7235C8.67245 9.12086 32.8263 0.433823 55.4806 0.800796Z" fill="#C3C4D0"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="88" height="75" viewBox="0 0 88 75" fill="none">
+              <path d="M34.6093 26.1426L35.7915 25.2195C39.6726 30.1901 47.8672 28.6441 49.8517 22.2706C49.9869 21.8363 50.1141 20.7905 50.2037 18.4619L50.2037 18.4618C50.2781 16.5343 50.3867 15.1542 50.6948 13.99C51.02 12.7609 51.5454 11.8487 52.2936 10.8075L52.2938 10.8073C52.8507 10.0326 53.6264 9.24792 54.4064 8.60002C55.1718 7.9642 56.0571 7.36358 56.8629 7.04854L56.8629 7.04851L57.5338 6.78624L59.58 5.98638V8.18329V9.89154V11.6V12.2575L59.0964 12.7031L58.0703 13.6484C58.0703 13.6485 58.0702 13.6485 58.0702 13.6485C57.5419 14.1354 57.0872 14.7358 56.9037 15.1093L56.9036 15.1095C56.724 15.4749 56.6718 15.6067 56.6216 15.9579C56.5548 16.4247 56.516 17.1655 56.4514 18.7366L56.4514 18.7367C56.3563 21.0475 56.2157 22.5333 55.9342 23.6285L55.9342 23.6286C54.811 27.9979 51.5754 31.692 47.403 33.3549C45.5323 34.1005 44.3821 34.3396 42.36 34.4051L41.1717 34.4436L36.5291 37.1628L35.771 35.8684L36.5291 37.1628C31.2928 40.2295 27.4653 42.5108 24.754 44.187C22.0124 45.8819 20.4901 46.911 19.7987 47.4883L19.7986 47.4884C16.174 50.5139 14.4351 54.2287 14.4339 58.9478C14.4334 60.8562 14.7322 62.4319 15.3114 63.8116L13.9283 64.3923L15.3114 63.8117C15.3909 64.0009 15.4653 64.1894 15.5222 64.3448C15.5501 64.4209 15.5784 64.5017 15.6019 64.5768C15.6132 64.6131 15.6283 64.6637 15.6422 64.7199L15.6428 64.7223C15.6488 64.7459 15.6908 64.9102 15.6908 65.1088C15.6908 65.8762 15.1526 66.2682 15.0456 66.3426C14.8792 66.4584 14.7281 66.5125 14.6767 66.5303C14.5545 66.5728 14.4513 66.5907 14.4208 66.596C14.3377 66.6105 14.2595 66.6178 14.215 66.6216C14.1123 66.6305 13.9842 66.6373 13.8485 66.6429C13.5698 66.6546 13.1787 66.6647 12.7097 66.673C11.768 66.6897 10.4755 66.7 9.05803 66.7C6.12843 66.7 4.73351 66.7201 3.89775 66.8487C3.52405 66.9062 3.33922 66.9762 3.21238 67.0415C3.06878 67.1155 2.9152 67.2258 2.61251 67.4837L1.64147 66.3439L2.61249 67.4837C1.83935 68.1424 1.5 68.862 1.5 69.9965C1.5 70.7651 1.66441 71.3251 1.93202 71.7589C2.20085 72.1946 2.63793 72.6066 3.34849 72.9743L3.34862 72.9743L3.80033 73.2081L24.6529 73.2522C35.0645 73.2742 40.3553 73.2836 43.128 73.2466C44.5274 73.2279 45.2289 73.1976 45.6105 73.1588C45.7001 73.1497 45.7609 73.1412 45.8011 73.1344C45.8198 73.1312 45.8331 73.1286 45.8418 73.1267C45.8443 73.1255 45.8471 73.1241 45.8504 73.1224L45.8516 73.1245L45.8505 73.1224C46.8331 72.6234 47.1625 71.6214 46.6486 70.6213L46.6485 70.6212C46.2369 69.82 45.4234 68.9641 44.3058 68.2381C43.1998 67.5197 41.8883 66.9899 40.5909 66.774L40.5908 66.774L39.9571 66.6685L38.0035 66.3432L38.846 64.5507L39.3467 63.4856L39.3467 63.4855C40.3643 61.3211 40.6757 58.5211 40.1611 56.2258L40.1611 56.2256C39.8454 54.8168 38.9542 52.9394 38.0032 51.7092L37.1279 50.5774L36.3119 49.5221L37.2647 48.5884L38.382 47.4935L38.3821 47.4934L39.4995 46.3986L40.6065 45.314L41.6544 46.4557L42.4322 47.3032L42.4323 47.3033C44.2888 49.3266 45.8301 52.6063 46.3938 55.5896C46.6435 56.9105 46.691 58.8512 46.5408 60.4452H48.25H51.7117H53.2117V61.9452V67.0898C53.2117 69.2177 53.2236 70.4964 53.2607 71.3046C53.2977 72.1127 53.3578 72.2798 53.3598 72.2852C53.4994 72.6175 53.5931 72.7414 53.6561 72.8069C53.7171 72.8704 53.8303 72.9639 54.1425 73.1065C54.1454 73.1078 54.1484 73.1094 54.1518 73.1111C54.2002 73.1357 54.3262 73.1998 55.2228 73.2381C56.1933 73.2796 57.8601 73.2875 60.9723 73.2892C64.6156 73.2912 66.3176 73.2886 67.2497 73.194C67.6906 73.1492 67.8209 73.0944 67.8528 73.0794C67.8848 73.0646 67.9181 73.0488 68.1696 72.829L68.17 72.8286C68.2126 72.7915 68.3408 72.6377 68.4602 72.3477C68.5744 72.0702 68.628 71.794 68.628 71.5992C68.628 71.0541 68.4041 70.3853 67.1716 69.1585C66.1339 68.1258 64.6728 67.2999 63.2195 66.9318C62.8719 66.8438 62.4228 66.7223 62.0633 66.5042C61.854 66.3772 61.5797 66.1629 61.3854 65.8114C61.1812 65.4421 61.1494 65.0752 61.1724 64.796L34.6093 26.1426ZM34.6093 26.1426L35.7915 25.2195M34.6093 26.1426L35.7915 25.2195M61.5055 61.9021L61.5055 61.9019L61.8069 59.3817L61.8866 58.7146L62.4374 58.33L63.4129 57.6487L63.4132 57.6485C64.5853 56.8304 66.2679 55.1111 67.0638 53.918L68.3117 54.7504L67.0638 53.918C68.8154 51.2925 69.522 48.9314 69.5027 45.7634C69.4843 42.78 68.7531 40.361 67.1682 37.9794C66.7722 37.3842 66.1212 36.5824 65.4719 35.8729C65.1509 35.5221 64.8463 35.2113 64.5912 34.9733C64.4637 34.8542 64.357 34.7614 64.2734 34.6942C64.1986 34.634 64.1641 34.6123 64.1643 34.612C64.1643 34.612 64.1662 34.613 64.1698 34.6151L64.8998 33.3047L64.1701 34.6152C63.7227 34.3661 63.4697 33.9807 63.3384 33.6072C63.2336 33.3087 63.1955 32.9875 63.1737 32.7162C63.1284 32.1499 63.1203 31.2429 63.1203 29.8171V26.4853V24.986L64.6196 24.9853L69.9982 24.9827C73.1156 24.9812 74.6701 24.9583 75.7578 24.8069C76.737 24.6707 77.3214 24.4343 78.5091 23.858C80.1327 23.0701 81.668 21.8341 82.3541 20.8794C82.7232 20.3658 83.6634 18.86 84.5802 17.3352C85.0311 16.5853 85.4639 15.8516 85.8014 15.2627C85.9705 14.9678 86.1126 14.7145 86.22 14.5163C86.2738 14.4172 86.3163 14.3365 86.3479 14.2742C86.3766 14.2176 86.3891 14.1903 86.3917 14.1847C86.3921 14.1838 86.3923 14.1835 86.3921 14.1837C86.6743 13.5109 86.3891 12.5656 85.5514 12.1068C85.537 12.1047 85.3925 12.062 84.9799 12.0179C84.4712 11.9636 83.7096 11.9194 82.5511 11.8767L61.5055 61.9021ZM61.5055 61.9021C61.3425 63.2664 61.1899 64.584 61.1724 64.7958L61.5055 61.9021ZM71.408 6.47004L71.4079 6.46999C68.6619 3.81965 68.2441 3.52006 67.4044 3.12338L67.4042 3.12328C66.7631 2.82034 65.8995 2.51738 65.5577 2.44683L71.408 6.47004ZM71.408 6.47004C73.6712 8.65414 75.1787 10.042 76.7911 10.8337M71.408 6.47004L76.7911 10.8337M69.3897 6.83562L69.3897 6.83564C72.086 7.95701 72.4896 11.3455 70.4745 13.2671L70.4745 13.2671C69.8252 13.8862 68.9606 14.1749 68.1936 14.248C67.4244 14.3213 66.5255 14.1998 65.7698 13.7273C63.0796 12.0452 63.5437 8.09039 66.3368 6.85462L69.3897 6.83562ZM69.3897 6.83562C68.9222 6.64122 68.4192 6.50141 67.8621 6.50306M69.3897 6.83562L67.8621 6.50306M45.0272 3.51076C44.1784 4.11996 43.0704 5.11984 41.093 6.99398C39.01 8.96833 37.6074 10.3365 36.6465 11.3438C35.6765 12.3606 35.2194 12.9459 34.9725 13.3587L45.0272 3.51076ZM45.0272 3.51076C45.7851 2.96673 46.3179 2.74628 47.1797 2.50851M45.0272 3.51076L47.1797 2.50851M47.1797 2.50851C47.1943 2.50665 47.2438 2.4997 47.3429 2.4905C47.4969 2.4762 47.7095 2.46152 47.9802 2.44707C48.5196 2.41829 49.2448 2.39277 50.102 2.37113C51.8137 2.32792 54.0153 2.30105 56.2313 2.29258C58.4472 2.2841 60.6686 2.29405 62.4198 2.32403C63.2963 2.33904 64.0472 2.35895 64.6174 2.38361C64.9032 2.39597 65.1348 2.40916 65.3098 2.42274C65.4591 2.43431 65.5318 2.44368 65.5524 2.44634L47.1797 2.50851ZM35.7915 25.2195C34.6094 23.7055 33.8814 21.5825 33.7298 19.3582M35.7915 25.2195L33.7298 19.3582M33.7298 19.3582C33.578 17.1324 34.0137 14.9627 34.9724 13.3588L33.7298 19.3582ZM76.7911 10.8337C78.4721 11.6591 80.1592 11.7886 82.551 11.8767L76.7911 10.8337ZM67.8621 6.50306C67.3008 6.50473 66.8003 6.64953 66.3371 6.85451L67.8621 6.50306ZM13.9662 63.6318C13.9667 63.6318 13.9657 63.6319 13.9632 63.6321L13.9662 63.6318Z" stroke="#240401" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="item__title">
+            Прайс-лист на <br> декоративные породы
+          </div>
+          <div class="item__subtitle">
+            Комплексный уход за небольшими <br> декоративными породами
+          </div>
+          <div class="item__download">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M2.33334 19.8333L3.05784 22.7325C3.18402 23.2373 3.4753 23.6854 3.8854 24.0057C4.29549 24.3259 4.80085 24.4999 5.32118 24.5H22.6788C23.1992 24.4999 23.7045 24.3259 24.1146 24.0057C24.5247 23.6854 24.816 23.2373 24.9422 22.7325L25.6667 19.8333M14 17.5V3.5V17.5ZM14 17.5L9.33334 12.8333L14 17.5ZM14 17.5L18.6667 12.8333L14 17.5Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="discounts-block container">
+  <div class="discounts-items">
+    <div class="discounts-item-outer">
+      <div class="discounts-item-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="403" height="264" viewBox="0 0 403 264" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M303.701 0.451162C407.909 4.56404 503.972 63.8588 535.066 163.404C565.174 259.792 516.159 359.207 434.18 418.168C353.537 476.17 248.273 483.624 164.875 429.657C63.7211 364.2 -28.7229 257.254 8.35668 142.616C45.5313 27.6839 183.001 -4.31267 303.701 0.451162Z" fill="#92564B"/>
+        </svg>
+        <div class="item__info">
+          <div class="item__subtitle">
+            Акция месяца
+          </div>
+          <div class="item__title">
+            -30% на грумминг
+            для щенков
+          </div>
+        </div>
+        <div class="item__img">
+          <img src="./assets/images/doggy.png">
+        </div>
+      </div>
+    </div>
+    <div class="discounts-item-outer">
+      <div class="discounts-item-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="403" height="264" viewBox="0 0 403 264" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M303.701 0.451162C407.909 4.56404 503.972 63.8588 535.066 163.404C565.174 259.792 516.159 359.207 434.18 418.168C353.537 476.17 248.273 483.624 164.875 429.657C63.7211 364.2 -28.7229 257.254 8.35668 142.616C45.5313 27.6839 183.001 -4.31267 303.701 0.451162Z" fill="#92564B"/>
+        </svg>
+        <div class="item__info">
+          <div class="item__subtitle">
+            Акция месяца
+          </div>
+          <div class="item__title">
+            -30% на грумминг
+            для щенков
+          </div>
+        </div>
+        <div class="item__img">
+          <img src="./assets/images/doggy.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="about-block container">
+  <div class="top-title">
+    О компании
+  </div>
+  <div class="about-info">
+    <div class="left-side">
+      <div class="about__text">
+        Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. Недостаток полезных веществ, содержащихся в том же мясе, например железа высокой биологической доступности, может вызвать серьезные проблемы со здоровьем.
+<br><br>Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно».
+      </div>
+    </div>
+    <div class="right-side alignfull">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./assets/images/slides/rectangle-31.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/slides/rectangle-32.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/slides/rectangle-31.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/slides/rectangle-32.png">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<footer>
+
+</footer>
+</body>
+</html>
